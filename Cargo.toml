@@ -1,0 +1,15 @@
+[package]
+name = "myApp"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "real"
+path = "src/main.rs" 
+
+[dependencies]
+anyhow = "1.0.104"
+clap = { version = "4.6.6", features = ["derive"] }
+console = "0.16.4"
+dialoguer = "0.12.0"
+rand = "0.8.5"
