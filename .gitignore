@@ -1,0 +1,20 @@
+# Rust build output
+/target/
+
+# Compiled binaries
+*.exe
+*.dll
+*.pdb
+
+# Local editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+h2.txt
+hi.txt
+
+# Local scratch files
+*.tmp
+*.log
