@@ -22,20 +22,40 @@ game.
 
 ## Installation
 
-Clone the repository and build the project:
+Clone the repository and build the release executable:
 
 ```bash
-git clone <repository-url>
-cd 7_RealCLITool
+git clone https://github.com/codeyahya/real-cli.git
+cd real-cli
 cargo build --release
+```
+
+The executable is created at `target\release\real.exe`.
+
+## Add the executable to PATH
+
+To run `real` from any terminal, add the executable folder to your Windows
+PATH:
+
+1. Copy the full path to the project's `target\release` folder.
+2. Open Windows Search and enter `Edit the system environment variables`.
+3. Click `Environment Variables`.
+4. Under `User variables`, select `Path` and click `Edit`.
+5. Click `New`, paste the `target\release` path, and confirm all dialogs.
+6. Open a new terminal.
+
+You can now run the program directly:
+
+```bash
+real --help
 ```
 
 ## Usage
 
-Run the program with Cargo:
+Run the program with the `real` command:
 
 ```bash
-cargo run -- <command> [arguments]
+real <command> [arguments]
 ```
 
 Available commands:
@@ -57,13 +77,13 @@ Available commands:
 Examples:
 
 ```bash
-cargo run -- file notes.txt
-cargo run -- write notes.txt "My first note"
-cargo run -- append notes.txt "Another line"
-cargo run -- read notes.txt
-cargo run -- ls
-cargo run -- del notes.txt
-cargo run -- tic-tac-toe
+real file notes.txt
+real write notes.txt "My first note"
+real append notes.txt "Another line"
+real read notes.txt
+real ls
+real del notes.txt
+real tic-tac-toe
 ```
 
 ## Build
@@ -74,7 +94,7 @@ To create an optimized executable:
 cargo build --release
 ```
 
-The executable is created in `target/release`.
+The executable is created in `target\release\real.exe`.
 
 ## License
 
